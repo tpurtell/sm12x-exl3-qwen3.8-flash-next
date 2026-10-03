@@ -16,6 +16,9 @@ Validate bounded SSD prefetch behavior and concurrent generation on the WS1 RTX 
   identical prompt hashes and 768-token output lengths; all streams completed.
 - Candidate: two concurrent uncached 82006-token prompts completed; arithmetic,
   JSON response, and forced tool invocation smoke checks passed.
+- Saved managed deployment restarted on the tested image with all three options
+  persisted. Normal serving endpoint returned HTTP 200; arithmetic JSON and
+  forced tool-call checks passed again after deployment.
 - [Full results and caveats](../benchmarks/ws1-ple-prefetch/README.md) include
   the prompt-latency tradeoff and slower second C1 result. OS page-cache state
   was not controlled; no universal or cold-cache speedup is claimed.
