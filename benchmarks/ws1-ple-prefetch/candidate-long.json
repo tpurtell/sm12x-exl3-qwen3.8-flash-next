@@ -1,0 +1,4931 @@
+{
+  "schema_version": 1,
+  "config": {
+    "base_url": "http://127.0.0.1:8002/v1",
+    "model": "qwen3.8-flash-next-fast",
+    "label": "candidate-long-context",
+    "run_id": "ws1-long-pair",
+    "seed": 20261002,
+    "short_words": 8192,
+    "long_words": 4096,
+    "output_tokens": 768,
+    "timeout": 300.0,
+    "mixed_delay": 0.5,
+    "thinking": true,
+    "cases": [
+      "c2"
+    ],
+    "repeats": 1,
+    "output": "candidate-long.json",
+    "self_test": false
+  },
+  "notes": [
+    "Arrivals describe SSE text chunks, not individual tokens.",
+    "Usage tokens are server-reported; prompts and generated text are omitted.",
+    "Short-prompt C1/C2 approximate decode workloads; TTFT includes their prefill.",
+    "Cache state is not controlled by this script. Restart equivalently for matched runs.",
+    "No automatic throughput acceptance claim: inspect all request errors and overlap."
+  ],
+  "cases": [
+    {
+      "case": "c2",
+      "repeat": 0,
+      "started_unix_s": 1791011209.8361971,
+      "wall_s": 52.47383141517639,
+      "valid": true,
+      "invalid_reason": null,
+      "requests": [
+        {
+          "label": "decode-0",
+          "prompt_sha256": "c35649e0e608c361b2474bdae018a3262f18b62f7912d7b8439289b1b92500bf",
+          "prompt_characters": 131208,
+          "chunks": [
+            {
+              "elapsed_s": 46.440515624010004,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 46.44485729502048,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 46.46038467300241,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 46.47600455000065,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 46.491747216001386,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 46.507284232997335,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 46.52303789899452,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 46.538682865997544,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 46.554435391997686,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 46.57003453900688,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 46.585795065009734,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 46.60424810301629,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 46.61984987001051,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 46.63541881702258,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 46.65466968002147,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 46.670361916010734,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 46.685891714005265,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 46.70155655100825,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 46.71742522600107,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 22
+            },
+            {
+              "elapsed_s": 46.73327310101013,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 46.749046926997835,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 21
+            },
+            {
+              "elapsed_s": 46.76488503301516,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 46.78047649000655,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 46.79602795699611,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 46.81159702400328,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 18
+            },
+            {
+              "elapsed_s": 46.828956609999295,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 46.84479463502066,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 21
+            },
+            {
+              "elapsed_s": 46.86047297201003,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 46.87614152801689,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 46.89197316401987,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 46.90773860999616,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 46.92340429601609,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 46.938994302996434,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 46.95452042101533,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 46.975048245018115,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 46.99438456702046,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.013605351006845,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 47.03483956999844,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.05609548999928,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.07334501601872,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 47.08905108302133,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 47.1047901790007,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 47.12069432399585,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 47.140707012003986,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.157927508000284,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.17965679400368,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 47.19925789500121,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 47.21483766200254,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.23044122901047,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.24622545501916,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.26191521101282,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 47.280406699021114,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 47.30168476901599,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 47.32104164100019,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 47.34192519300268,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.36280745500699,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 47.37998580202111,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 47.401842157996725,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 47.42308306801715,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 47.44205120301922,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 47.45778338800301,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 47.47360372400726,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 47.48927389000892,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 47.507742659014184,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 47.52507789400988,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 47.54671499101096,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 47.567690313007915,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 47.58570608400623,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 47.605031706014415,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 47.62062915301067,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 47.63636507000774,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.6536800150061,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 47.66928949201247,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 47.68497342901537,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.70353650601464,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.71909630301525,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.73448602200369,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 47.750017009006115,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 47.767297345009865,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 47.78442311199615,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 47.80016311799409,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.8160783930216,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.83165750000626,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.847305547009455,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.86713638601941,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 47.88442906201817,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 47.90183554700343,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 47.92119412901229,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 47.93691448500613,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 47.95226764399558,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.967907890997594,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 47.986105331016006,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 48.00544149300549,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 48.02098820099491,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 48.04113944701385,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 48.06246172700776,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 48.08107553402078,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 48.10080031401594,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.11645180001506,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 48.1351407369948,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 48.15229575400008,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 48.17173464500229,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 48.18735129199922,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 48.203008669021074,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 48.21857917599846,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 48.23429041201598,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.24997764901491,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 48.265668095002184,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 48.28658789701876,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 48.30627709699911,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.325532079994446,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 48.34497281201766,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 48.36062067799503,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 48.38005016001989,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.395966985000996,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 48.411743550997926,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 48.42758377699647,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 48.44329596302123,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 48.458831070020096,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 48.47994621100952,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 48.49700137801119,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 48.512484106002375,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 48.52817339199828,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 48.54555832699407,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 48.564726261014584,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 48.58312625999679,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 48.600269926013425,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 18
+            },
+            {
+              "elapsed_s": 48.61750883300556,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 48.63477122900076,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 23
+            },
+            {
+              "elapsed_s": 48.65024717702181,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 48.6657514340186,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 48.681295542017324,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 48.69701636800892,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.71268716402119,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 48.72988776100101,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 48.74897216501995,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 48.766353280021576,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 22
+            },
+            {
+              "elapsed_s": 48.786578486004146,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 48.80358268402051,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 48.824698395008454,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 48.842943894007476,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.85871549000149,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 48.87893925700337,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 48.894451394007774,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 48.91587393300142,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.93644373700954,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 48.95653897401644,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 48.973798410996096,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 48.990954587003216,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 49.01229421599419,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 49.03031060801004,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 49.045859695004765,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 49.06160865101265,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 49.07731282702298,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 49.092979544017,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 49.10999472101685,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 49.125694968010066,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 49.144565673021134,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 24
+            },
+            {
+              "elapsed_s": 49.16032881900901,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 49.17838627001038,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 49.19554807699751,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 49.21552836502087,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 49.23672693502158,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 49.25629998600925,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 49.277934483019635,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 49.296172792004654,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 49.315874363004696,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 49.3351888449979,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.350658612995176,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.366084181005135,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 49.38161034800578,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.398616146005224,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.41393167502247,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.429575602000114,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.446785817999626,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.46255052401102,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.47788766300073,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.493554768996546,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.51081310599693,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.528621138015296,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.54418377499678,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.55974173199502,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.578791656997055,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 49.59639985099784,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.61223225601134,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.627937892015325,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.64662069900078,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.66379827601486,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.679510562011274,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.696699749008985,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.71459221999976,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.73026190701057,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.74586335400818,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.76178193901433,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.777491184999235,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.79303888199502,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.80874212901108,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.82616724300897,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.843467069003964,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.85908429601113,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.87477820299682,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.89218005799921,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.907831015007105,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.92347787099425,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.94414039500407,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 49.9628754510195,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.97857691801619,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 49.993997856014175,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.0109277839947,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.028320559009444,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.044050035008695,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.05973890199675,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.075646687007975,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.090915366017725,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.106497843022225,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.12206615001196,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 50.14380110701313,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 50.164834258001065,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 50.18199627500144,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 50.20021877399995,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 50.2175144799985,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 50.233300816005794,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.24902946202201,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 50.27096049700049,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 50.29203727800632,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 50.31244164399686,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 50.33354901400162,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 50.353645532013616,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 50.37477150201448,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 50.3944375020219,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 50.413939354009926,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 50.43375664300402,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 50.453279854002176,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 50.46906718000537,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 50.48485838601482,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 50.505868587002624,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 50.521308405004675,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 50.53720058000181,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 50.55271909700241,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 18
+            },
+            {
+              "elapsed_s": 50.57096369701321,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 50.590328999009216,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 50.60967480100226,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 50.629596600017976,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 50.6492828100163,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 50.670209892006824,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 50.68932860501809,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 50.7091639850114,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.72412691600039,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.739361234998796,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.75735316600185,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 50.77708668602281,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.79234581600758,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.80768556401017,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 50.82598371300264,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 50.847098883998115,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 23
+            },
+            {
+              "elapsed_s": 50.86824485400575,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 50.889232296001865,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 50.90817417099606,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 50.9277344919974,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 50.947297423001146,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 50.964549819007516,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 50.98005741700763,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 50.995816552022006,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 51.011681727017276,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.02723654502188,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 51.04672919600853,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 51.065733141003875,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 51.08293926701299,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 51.103099164000014,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 51.12198021900258,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 51.14296377100982,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.16307828799472,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.182638508995296,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 51.203942509018816,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 51.22568389499793,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 51.246667205996346,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 51.26833466300741,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 51.28760732599767,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 51.308620477007935,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.32973556799698,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.349942964006914,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 51.370162870996865,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 51.39153972000349,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 51.41337489601574,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 51.43426911800634,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 51.453452211018885,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 22
+            },
+            {
+              "elapsed_s": 51.47255092501291,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 51.488269961002516,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 51.50379506900208,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 51.51968676401884,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 51.53684201100259,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 51.55563709701528,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 51.572949312016135,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 23
+            },
+            {
+              "elapsed_s": 51.58858323900495,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.60972150001908,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 51.629988296015654,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 51.64582880100352,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 51.66308241701336,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 51.6851473810093,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 51.70447816399974,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 51.72654695800156,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 51.74392653402174,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 51.761943445017096,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 51.783829260006314,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 51.80415719602024,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 51.823504468018655,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 51.84194804599974,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 51.861934465006925,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 51.882837876008125,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 51.90329737201682,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 51.925125047011534,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 51.946444297005655,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 51.964571157004684,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 51.98408159799874,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 52.003422581008635,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 52.02456839100341,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 52.045994650019566,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 52.06434471899411,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 52.08474982401822,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 52.10323781199986,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 52.118804529018234,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 52.13619368401123,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 52.1567352990096,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 52.17418811301468,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 52.18965821102029,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 52.2095211900014,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 52.229756007000105,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 52.25089243700495,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 52.27248468401376,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 52.28976075100945,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 52.310603723017266,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 52.32590540201636,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 52.34138610001537,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 52.35675670800265,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 52.37758677999955,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 52.39969045500038,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 52.41880755801685,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 52.435766686015995,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 52.455905823997455,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 52.473132350016385,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 82006,
+            "total_tokens": 82774,
+            "completion_tokens": 768,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "created_cache_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 768
+            }
+          },
+          "finish_reason": "length",
+          "error": null,
+          "done_received": true,
+          "started_unix_s": 1791011209.8366408,
+          "wall_s": 52.47322766901925,
+          "ttft_s": 46.440515624010004,
+          "max_inter_chunk_gap_s": 0.02210367500083521,
+          "p95_inter_chunk_gap_s": 0.021422538993647322,
+          "chunk_count": 340,
+          "status": "completed",
+          "usage_completion_tokens_per_wall_s": 14.636035062379731
+        },
+        {
+          "label": "decode-1",
+          "prompt_sha256": "1f0c58842bd1316e8fd61274516a91b530e7ac9101f16754052639526a40b065",
+          "prompt_characters": 131208,
+          "chunks": [
+            {
+              "elapsed_s": 20.551795798004605,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 20.555118265998317,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 20.570481755014043,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 20.586217561009107,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 20.65913002900197,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 20.67378590302542,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 20.689346940023825,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 20.705056886014063,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 20.77649596502306,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 20.79156433499884,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 20.807283922011266,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 20.824446687998716,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 20.89670629100874,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 20.91149435401894,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 20.927048491023015,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 20.94750994601054,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 21.01849861702067,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 21.033305899007246,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 21.048986226000125,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 21.068301368009998,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 21.13882498300518,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 21.15811283502262,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 21.176459434005665,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 21.192209531000117,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 22
+            },
+            {
+              "elapsed_s": 21.263291591021698,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 21.280092500004685,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 21.295951665000757,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 21.31151396300993,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 21.381609640026,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 21.39637195301475,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 24
+            },
+            {
+              "elapsed_s": 21.412027159007266,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 22
+            },
+            {
+              "elapsed_s": 21.427844755002297,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 18
+            },
+            {
+              "elapsed_s": 21.49893537600292,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 21.513529419025872,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 21.529292445018655,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 21.548939905012958,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 21.619659738003975,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 21.634522670006845,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 21.655324823019328,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 21.672804068017285,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 21.74282467601006,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 21.763079672004096,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 21.784422001015628,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 21.805495382024674,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 21.875856516999193,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 21.890608200017596,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 21.908063865004806,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 21.923674852005206,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 21.995079970016377,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 22.016135201003635,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 22.036976914008847,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 22.0583811920078,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 22.129657442012103,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 22.146031064010458,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 22.161803150025662,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 22.18370200501522,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 22.253803252009675,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 22.268442376021994,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 22.28404064301867,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 22.304229670000495,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 22.37505993200466,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 22.39361783899949,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 22.41063793702051,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 22.426036445016507,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 22.497279715025797,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 22.513827016024152,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 22.534949596010847,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 22.55612520701834,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 22.626796610013116,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 22.641862301010406,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 23
+            },
+            {
+              "elapsed_s": 22.657715806009946,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 22.67507819100865,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 22.747124896006426,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 22.766231080022408,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 22.781945586000802,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 21
+            },
+            {
+              "elapsed_s": 22.800902481016237,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 22.87200838100398,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 22.891411103017163,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 22.909370465000393,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 22.930275846010773,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 23.001984233007533,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 23.019765706005273,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 23.03809170500608,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 23.055142292025266,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 23.12526386900572,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 23.14188660000218,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 23.15770337500726,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 23.173111074022017,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 23.244395312998677,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 23.265112956025405,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 23.285925199015765,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 23.305942377017345,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 23.377404155005934,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 23.392480884998804,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 23.407966203027172,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 23.426113803026965,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 23.497111525008222,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 23.51462310901843,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 23.531958455016138,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 23.55307835500571,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 23.625405458005844,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 23.644782930001384,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 23.66339553700527,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 23.681716015998973,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 23.75439766602358,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 23.774120396003127,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 23.791122604015982,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 23.812738101027207,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 23.88420806900831,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 23.901570594025543,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 23.92262875600136,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 23.942267826001626,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 24.014462739025475,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 24.03093188101775,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 24.048243256023852,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 24.065664431022014,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 24.13595190702472,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 24.15220371002215,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 24.173668368021026,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 24.1932655890123,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 24.26493744601612,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 24.284170799015556,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 24.30131684601656,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 24.318583302025218,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 24.391545179998502,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 24.412130934011657,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 24.43347237299895,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 24.45170249301009,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 24.530420253024204,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 24.548359775013523,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 24.566785963019356,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 24.58883912800229,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 24.664329469000222,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 24.684190658008447,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 24.702320199023234,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 24.723479229025543,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 24.794138732017018,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 24.811862335016485,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 24.83186097300495,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 24.853999307000777,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 24.92903234201367,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 24.94361487502465,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 24.959862658026395,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 22
+            },
+            {
+              "elapsed_s": 24.97549999502371,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 25.04843724402599,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 25.062990028003696,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 25.082772087014746,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 25.101116946025286,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 25.17499393800972,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 25.191275051009143,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 25.211604576004902,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 25.228802603000076,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 25.299790624005254,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 25.320262919005472,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 25.34214597500977,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 25.36151473701466,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 25.432597618026193,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 25.44885403002263,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 25.467341188021237,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 25.4843952160154,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 25.55627717101015,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 25.57117605302483,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 25.58717378700385,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 25.60427149402676,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 25.675868791004177,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 25.69095670201932,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 25.70662088901736,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 25.7220502270211,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 25.792207534017507,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 25.813277495006332,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 25.833451661019353,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 25.848976369015872,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 25.920942204014864,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 25.939188123011263,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 25.958261077001225,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 21
+            },
+            {
+              "elapsed_s": 25.978712642012397,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 26.04891026901896,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 26.06843964001746,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 26.08659214002546,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 26.108864673005883,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 26.180609800008824,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 26.200008461019024,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 26.220223968004575,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 26.241722826001933,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 26.314123018004466,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 26.332754375005607,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 26.354856949008536,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 26.3753315640206,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 26.445416302012745,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 26.46200893202331,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 26.47773019800661,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 26.498655890027294,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 26.569923730014125,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 26.586166321998462,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 26.60321698000189,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 26.623893513024086,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 26.694407848000992,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 26.71532248001313,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 26.735499526024796,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 26.754957338009262,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 26.82632885701605,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 26.8427841180237,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 26.858189356018556,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 26.87377270401339,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 26.94498820300214,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 26.96433051599888,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 26.98137563301134,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 26.99656082302681,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.06750108502456,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.087137955008075,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 27.102393954002764,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.1178460320225,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.188398427009815,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 27.203731675021118,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.219022275006864,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.23442888300633,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.306906835001428,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 27.321690187003696,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.336842107004486,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 27.352157715009525,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.422966188023565,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 27.438001399015775,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.45323846800602,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 27.46834560899879,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.539461779000703,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.556252158014104,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 27.571836676012026,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 27.586825417005457,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 27.657452440005727,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.675350522011286,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 27.69618743500905,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 27.715323018026538,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.785407876013778,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 27.80269355099881,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 18
+            },
+            {
+              "elapsed_s": 27.824289519019658,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 27.844310997024877,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 27.916867798019666,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 27.935498375009047,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 27.95110260200454,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 27.97036737500457,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 28.048999385006027,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 28.06977534800535,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 28.090981868008384,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 28.111065616016276,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 28.1854945840023,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 28.206032429006882,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 28.22286863802583,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 28.240133712999523,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 28.31080289700185,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 28.331043444020906,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 28.35325474702404,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 28.374265898019075,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 28.446550031017978,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 28.461281054012943,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 28.477034139999887,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 17
+            },
+            {
+              "elapsed_s": 28.495958845014684,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 28.567015366017586,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 28.587244852009462,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 28.60858773102518,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 28.6259012670198,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 28.697579063999,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 28.717705231014406,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 28.73905317002209,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 28.760358540021116,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 28.830987583001843,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 28.845724086015252,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 28.86147634201916,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 28.87718022800982,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 28.9482039490249,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 28.966832116013393,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 26
+            },
+            {
+              "elapsed_s": 28.987246921024052,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 29.007353089022217,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 29.077885503007565,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 29.09752215401386,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 29.117133974010358,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 29.13740159102599,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 29.20834267200553,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 29.22783623301075,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 29.24590485400404,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 29.267663830018137,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 29.33829506402253,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 29.357653245999245,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 29.37884207701427,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 29.399687269004062,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 29.472882276022574,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 29.491597872023704,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 29.511345412000082,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 29.532315523014404,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 29.605444921005983,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 29.626682050002273,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 29.646761948009953,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 29.662351435021264,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 29.734561368008144,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 29.753411754005356,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 29.76885288199992,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 13
+            },
+            {
+              "elapsed_s": 29.78802126602386,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 10
+            },
+            {
+              "elapsed_s": 29.860021830012556,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 20
+            },
+            {
+              "elapsed_s": 29.879629900999134,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 29.895192088006297,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 12
+            },
+            {
+              "elapsed_s": 29.914709789009066,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 29.986145667004166,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.00085254001897,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.016317018016707,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 30.037071341008414,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 30.10905995601206,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.12334385199938,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.138549011026043,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.154167458007578,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 30.22519236902008,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 30.24585714301793,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 30.26103209302528,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 30.276285852014553,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.350842190004187,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 30.366579466004623,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.382349022023845,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 30.397526812012075,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.470393711002544,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 30.485240913025336,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 3
+            },
+            {
+              "elapsed_s": 30.504994782007998,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 30.520827158004977,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 30.594196013000328,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 30.612855940009467,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 30.630296275019646,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 30.647335003013723,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 30.721579672012012,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 19
+            },
+            {
+              "elapsed_s": 30.738237262004986,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 30.759605272003682,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 30.781139359023655,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 30.855901825998444,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 30.870472570008133,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 16
+            },
+            {
+              "elapsed_s": 30.888854518008884,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 30.90896018501371,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 30.98210027301684,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 2
+            },
+            {
+              "elapsed_s": 31.000901388004422,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 31.02124663401628,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 31.036838281026576,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 4
+            },
+            {
+              "elapsed_s": 31.107324366021203,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 8
+            },
+            {
+              "elapsed_s": 31.127038216014626,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 31.145332415006123,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 11
+            },
+            {
+              "elapsed_s": 31.165784020005958,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 31.235799237998435,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 1
+            },
+            {
+              "elapsed_s": 31.257302056008484,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 21
+            },
+            {
+              "elapsed_s": 31.277409313013777,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 9
+            },
+            {
+              "elapsed_s": 31.298708472022554,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 5
+            },
+            {
+              "elapsed_s": 31.371502752008382,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 6
+            },
+            {
+              "elapsed_s": 31.39195318700513,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 15
+            },
+            {
+              "elapsed_s": 31.409259742998984,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 18
+            },
+            {
+              "elapsed_s": 31.43032807399868,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 7
+            },
+            {
+              "elapsed_s": 31.501148956012912,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            },
+            {
+              "elapsed_s": 31.518815300019924,
+              "fields": [
+                "reasoning"
+              ],
+              "characters": 14
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 82006,
+            "total_tokens": 82774,
+            "completion_tokens": 768,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "created_cache_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 768
+            }
+          },
+          "finish_reason": "length",
+          "error": null,
+          "done_received": true,
+          "started_unix_s": 1791011209.83659,
+          "wall_s": 31.518903819000116,
+          "ttft_s": 20.551795798004605,
+          "max_inter_chunk_gap_s": 0.0787177600141149,
+          "p95_inter_chunk_gap_s": 0.07279427998582833,
+          "chunk_count": 350,
+          "status": "completed",
+          "usage_completion_tokens_per_wall_s": 24.36632962904747
+        }
+      ]
+    }
+  ]
+}

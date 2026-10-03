@@ -70,3 +70,8 @@ LABEL io.tpurtell.structured-output.reasoning-fix="c6e19b3be243" \
 # Resident GPU workers own metadata only; the CPU subprocess owns the table.
 COPY patches/port-ple-resident-loading.py /tmp/port-ple-resident-loading.py
 RUN python3 /tmp/port-ple-resident-loading.py /usr/local/lib/python3.12/dist-packages/vllm
+
+# Opt-in SSD prefetch and decode fairness. Numerical model code is unchanged.
+COPY patches/port-ple-prefetch.py patches/port-ple-scheduling.py /tmp/ple-interference/
+RUN python3 /tmp/ple-interference/port-ple-prefetch.py /usr/local/lib/python3.12/dist-packages/vllm \
+ && python3 /tmp/ple-interference/port-ple-scheduling.py /usr/local/lib/python3.12/dist-packages/vllm

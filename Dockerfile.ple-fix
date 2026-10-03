@@ -1,0 +1,7 @@
+# Derive from an already-qualified immutable image; do not rebuild CUDA kernels.
+ARG BASE_IMAGE=ghcr.io/tpurtell/rtx6k-exl3-qwen3.8-flash-next@sha256:0f3fdb9e1073446ca756db7541bbcfe943a7e5c43aa97e85cbcba982d82b7516
+FROM ${BASE_IMAGE}
+COPY patches/port-ple-prefetch.py patches/port-ple-scheduling.py /tmp/ple-interference/
+RUN python3 /tmp/ple-interference/port-ple-prefetch.py /usr/local/lib/python3.12/dist-packages/vllm \
+ && python3 /tmp/ple-interference/port-ple-scheduling.py /usr/local/lib/python3.12/dist-packages/vllm
+LABEL io.andorra.ple-fix="page-prefetch-decode-fairness-v1"
